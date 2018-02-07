@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title center>ID Found</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card (tap)="showCni()">
+    <img src="../assets/imgs/cni.jpg" />
+    <div class="card-title">Retrouver CNI</div>
+    <div class="card-subtitle">Entrer pour plus de detail...</div>
+  </ion-card>
+
+  <ion-card (tap)="showPassport()">
+    <img src="../assets/imgs/pass.jpg" />
+    <div class="card-title">PASSPORT</div>
+    <div class="card-subtitle">Retrouver votre passport</div>
+  </ion-card>
+
+  <ion-card (tap)="showCarteSejour()"> 
+    <img src="../assets/imgs/sejour.jpg" />
+    <div class="card-title">CARTE DE SEJOUR</div>
+    <div class="card-subtitle">Retrouver votre carte de sejour</div>
+  </ion-card>
+
+  <ion-card (tap)="showVisa()">
+    <img src="../assets/imgs/visa.jpg" />
+    <div class="card-title">VISA</div>
+    <div class="card-subtitle">Recupérer votre Visa</div>
+  </ion-card>
+
+  <ion-card (tap)="showAutEntree()">
+    <img src="../assets/imgs/autoEntree.jpg" />
+    <div class="card-title">AUTORISATION D'ENTREE</div>
+    <div class="card-subtitle">Recupérer votre autorisation</div>
+  </ion-card>
+
+  <ion-card (tap)="showAutSejour()">
+    <img src="../assets/imgs/sejour.jpg" />
+    <div class="card-title">AUTORISATION SEJOUR</div>
+    <div class="card-subtitle">Recupérer votre autorisation</div>
+  </ion-card>
+
+  <ion-card (tap)="showActe()">
+    <img src="../assets/imgs/adn.jpg" />
+    <div class="card-title">ACTE DE NAISSANCE</div>
+    <div class="card-subtitle">Recupérer votre acte de naissance</div>
+  </ion-card>
+
+  <ion-card (tap)="showPermis()">
+    <img src="../assets/imgs/pdc.jpg" />
+    <div class="card-title">PERMIS DE CONDUIRE</div>
+    <div class="card-subtitle">Retrouver permis de conduire</div>
+  </ion-card>
+
+  <ion-fab right bottom>
+      <button ion-fab><ion-icon name="camera"></ion-icon></button>
+  </ion-fab>
+</ion-content>

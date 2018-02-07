@@ -1,31 +1,28 @@
 <ion-menu [content]="content">
-  <!--<ion-header>
+  <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Menu ID found</ion-title>
     </ion-toolbar>
-  </ion-header>-->
+  </ion-header>
 
-  <ion-content class="bck">
-    <div class="logo">
-      <img src="assets/imgs/logoId.png" >
-    </div>
-    <ion-list no-lines>
-      <button menuClose class="bck" ion-item *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-content>
+    <ion-list>
+      <!--<button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
-      </button>
-      <button class="bck" menuClose ion-item clear>
+      </button>-->
+      <button menuClose ion-item (click)="openPage(p)">
         Mon Compte
       </button>
-      <button class="bck" menuClose ion-item>
+      <button menuClose ion-item (click)="openPage(p)">
         Personaliser
       </button>
-      <button class="bck" menuClose ion-item>
+      <button menuClose ion-item (click)="openPage(p)">
         Parametres
       </button>
-      <button class="bck" menuClose ion-item>
+      <button menuClose ion-item (click)="openPage(p)">
         Plus..
       </button>
-      <button class="bck" menuClose ion-item>
+      <button menuClose ion-item (click)="openPage(p)">
         A propos
       </button>
     </ion-list>
