@@ -1,0 +1,37 @@
+<ion-menu [content]="content">
+  <!--<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu ID found</ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+
+  <ion-content class="bck">
+    <div class="logo">
+      <img src="assets/imgs/logoId.png" >
+    </div>
+    <ion-list no-lines>
+      <button menuClose class="bck" ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      <button class="bck" menuClose ion-item clear>
+        Mon Compte
+      </button>
+      <button class="bck" menuClose ion-item>
+        Personaliser
+      </button>
+      <button class="bck" menuClose ion-item>
+        Parametres
+      </button>
+      <button class="bck" menuClose ion-item>
+        Plus..
+      </button>
+      <button class="bck" menuClose ion-item>
+        A propos
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
